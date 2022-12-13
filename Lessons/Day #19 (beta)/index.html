@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson</title>
+  </head>
+  <body>
+    <button id="myBtn">Hello Button</button>
+    <script>
+      function getRandomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+      }
+      function getRandomColor() {
+        const green = getRandomNumber(0, 255);
+        const red = getRandomNumber(0, 255);
+        const blue = getRandomNumber(0, 255);
+        return `rgb(${green},${red},${blue})`;
+      }
+
+      const htmlTag = document.querySelector("html");
+
+      const myButton = document.getElementById("myBtn");
+      myButton.addEventListener("click", function () {
+        htmlTag.style.backgroundColor = getRandomColor();
+      });
+    </script>
+  </body>
+</html>

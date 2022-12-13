@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson</title>
+  </head>
+  <body>
+    <script>
+      const str1 = "Hello ";
+      const str2 = " My name is";
+      const str3 = ` Da`;
+      const message = str1 + "everyone " + str2 + str3;
+      console.log(message);
+      const message1 = `${str1}everyone ${str2}${str3} `;
+      console.log(message1);
+      console.log(str2.length);
+      console.log(str1[0]);
+      console.log(str1.toUpperCase());
+      let firstName = "John";
+      let fullName = firstName.concat(" ", "Smith");
+      console.log(fullName);
+      console.log(firstName);
+      const fullstring = "javascript is programming language";
+      const substr = fullstring.substr(0, 13);
+      const newstr = fullstring.substr(13);
+      console.log(substr);
+      console.log(newstr);
+
+      const iof = "This is string"; // th string
+      const iof1 = iof.substr(0, iof.indexOf("is"));
+      const rest = iof.substring(iof.indexOf("is") + 3);
+      console.log("rest:", rest);
+      const iof2 = iof.substr(iof.indexOf("is"));
+      console.log("iof2:", iof2);
+      const result = iof1.concat("", iof2);
+      console.log(result);
+
+      //   const promt1 = prompt("too oruulnu");
+      //   const promt2 = prompt("too 2");
+
+      //   console.log(Number(promt1) + Number(promt2));
+      //   let a = 5,
+      //     b = 9;
+      //   const diff = Math.abs(a - b);
+      //   console.log(diff);
+      const c = 2,
+        d = 10;
+      const random = Math.random(c);
+      console.log(random);
+    </script>
+  </body>
+</html>
