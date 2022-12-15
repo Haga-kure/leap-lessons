@@ -13,3 +13,7 @@ for (let i = 0; i < li.length; i++) {
   li[i].style.fontSize = "30px";
 }
 console.log(5);
+for (let i = 0; i < li.length; i++);
+if (li[i] === 1) {
+  li[i].style.backgroundColor = "#";
+}
