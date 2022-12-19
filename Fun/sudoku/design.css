@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+table {
+  border-collapse: collapse;
+}
+
+td {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+td:nth-child(3n):not(:last-child) {
+  border-right: 2px solid #000;
+}
+
+tr:nth-child(3n):not(:last-child) tr {
+  border-right: 2px solid #000;
+}
+
+td.default {
+  color: #000;
+}
+
+td:not(.default) {
+  cursor: pointer;
+}
+
+td.active {
+  background: rgba(83, 104, 149, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+td.error {
+  background-color: rgba(255, 104, 149, 0.5);
+}
