@@ -1,0 +1,16 @@
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.box {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-1:hover {
+  width: 500px;
+}
