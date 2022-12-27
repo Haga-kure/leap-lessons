@@ -100,5 +100,3 @@ const deleteCar = (id) => {
         getCarsHtml();
       });
 };
-
-const modal = new bootstrap.Modal(document.getElementById("modal"));
