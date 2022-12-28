@@ -100,3 +100,20 @@ const deleteCar = (id) => {
         getCarsHtml();
       });
 };
+
+const editCar = (id) => {
+  if (confirm("Edit ?"))
+    fetch("http://localhost:3333/api/cars", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ id }),
+    })
+      .then((res) => console.log(res))
+      .then((err) => {
+        console.warn(err);
+        alert("Done !");
+        getCarsHtml();
+      });
+};
