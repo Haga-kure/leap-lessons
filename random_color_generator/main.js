@@ -6,16 +6,16 @@ function getRandomNumber(min, max) {
 const bc = document.querySelector("body");
 
 function changeBackgroundColor() {
-  const green = getRandomNumber(0, 255);
-  const red = getRandomNumber(0, 255);
-  const blue = getRandomNumber(0, 255);
+  const green = getRandomNumber(10, 255);
+  const red = getRandomNumber(20, 255);
+  const blue = getRandomNumber(30, 255);
 
   bc.style.backgroundColor = `rgb(${green},${red},${blue})`;
 }
 function changeButtonColor() {
-  const green = getRandomNumber(0, 255);
-  const red = getRandomNumber(0, 255);
-  const blue = getRandomNumber(0, 255);
+  const green = getRandomNumber(40, 255);
+  const red = getRandomNumber(45, 255);
+  const blue = getRandomNumber(50, 255);
 
   button.style.backgroundColor = `rgb(${green},${red},${blue})`;
 }
