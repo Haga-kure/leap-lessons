@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../Downloads/html5up-stellar"
+	},
+	{
+		"path": "../../Desktop/dalais-project"
+	},
+	{
+		"path": "../../Downloads/html5up-dimension"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "html5up-stellar"
+  }
+}
